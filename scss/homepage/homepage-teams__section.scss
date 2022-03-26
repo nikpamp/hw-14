@@ -1,0 +1,61 @@
+.homepage-teams {
+    margin-bottom: 70px;
+}
+
+.homepage-teams__box {
+    padding: 0 60px;
+    display: flex;
+    margin-bottom: 46px;
+
+    .homepage-teams__photo {
+        display: block;
+        height: 100%;
+    }
+
+    .homepage-teams__right-side {
+        background-color: $bg-color;
+        border-radius: 0 12px 12px 0;
+        padding: 30px;
+    }
+
+    .chapter--homepage-teams {
+        margin-bottom: 5px;
+    }
+
+    .homepage-teams__blockquote {
+        @extend %gradient-text;
+        font-size: $title-font;
+        line-height: $title-font-line;
+        margin-bottom: 30px;
+        word-wrap: break-word;
+    }
+
+    .homepage-teams__author {
+        font-size: $standard-size;
+        line-height: $standard-size-small-line;
+        color: $text-color;
+        margin-bottom: 6px;
+    }
+
+    .homepage-teams__position {
+        font-family: 'Montserrat Regular';
+        font-size: $sub-standard-size;
+        line-height: $sub-standard-size-big-line;
+        color: $text-color;
+    }
+}
+
+@media (max-width: 930px) {
+
+    .homepage-teams__box {
+        flex-direction: column;
+
+        .homepage-teams__photo {
+            width: 100%;
+        }
+    
+        .homepage-teams__right-side {
+            border-radius: 0 0 12px 12px;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.about-us-team__image {
+    display: block;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+@media (max-width: 500px) {
+
+    .about-us-team__image {
+        margin-bottom: 30px;
+    }
+}

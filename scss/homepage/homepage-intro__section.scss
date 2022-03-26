@@ -1,0 +1,133 @@
+.homepage-intro__box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.homepage-intro__list {
+    padding: 0 60px 0 0;
+    display: grid;
+    grid-template-rows: repeat(4, $title-font-line);
+    grid-template-columns: 555px;
+    row-gap: 30px;
+}
+
+.homepage-intro__item {
+    display: flex;
+    justify-content: end;
+}
+
+.homepage-intro__link,
+.homepage-intro__link--first {
+    font-size: $title-font;
+    line-height: $title-font-line;
+    color: $text-color;
+    text-decoration: none;
+}
+
+.homepage-intro__link:hover,
+.homepage-intro__link--first:hover {
+    -webkit-text-fill-color: $accent-color;
+}
+
+.homepage-intro__link--first {
+    @extend %gradient-text;
+}
+
+.homepage-intro__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 4px solid #6f6f93;
+    min-height: 304px;
+    padding: 0 180px 0 60px;
+    color: #fff;
+}
+
+.homepage-intro__title {
+    font-size: $intro-title;
+    line-height: $intro-title-line;
+    margin-bottom: 60px;
+}
+
+.homepage-intro__text {
+    font-family: 'Montserrat Regular';
+    font-size: $intro-text;
+    line-height: $intro-text-line;
+}
+
+@media (max-width: 1440px) {
+
+        .homepage-intro__description {
+        padding: 0 12.5% 0 60px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .homepage-intro__list {
+        padding: 15px 60px 15px 60px;
+        grid-template-columns: 375px;
+    }
+
+    .homepage-intro__description {
+        padding: 9.5px 60px 9.5px 60px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .homepage-intro__box {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 60px;
+    }
+
+    .homepage-intro__list {
+        padding: 0 0 60px 0;
+        white-space: nowrap;
+        display: flex;
+        overflow: scroll;
+        width: 90vw;
+
+        .homepage-intro__item {
+            margin-right: 30px;
+        }
+    }
+
+    .homepage-intro__description {
+        border-top: 4px solid #6f6f93;
+        border-left: none;
+        padding: 60px 0 0 0;
+        width: calc(100% - 60px);
+    }
+}
+
+@media (max-width: 375px) {
+
+    .homepage-intro__box {
+        flex-direction: column;
+        padding-left: 30px;
+        margin-bottom: 30px;
+    }
+
+    .homepage-intro__list {
+        padding: 0 0 30px 0;
+    }
+
+    .homepage-intro__link,
+    .homepage-intro__link--first {
+        font-size: $intro-title;
+        line-height: $intro-title-line;
+    }
+
+    .homepage-intro__description {
+        padding: 30px 0 0 0;
+        width: calc(100% - 30px);
+    }
+
+    .homepage-intro__title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}

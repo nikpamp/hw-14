@@ -1,0 +1,92 @@
+.about-us-services__box {
+    padding: 0 120px;
+    margin-bottom: 60px;
+}
+
+.about-us-services__box {
+    display: flex;
+}
+
+.about-us-services__description {
+    max-width: 972px;
+    padding-right: 30px;
+}
+
+.about-us-services__title {
+    @extend %gradient-text;
+    font-size: $title-font;
+    line-height: $title-font-line;
+    margin-bottom: 28px;
+}
+
+.about-us-services__text {
+    font-family: 'Montserrat Regular';
+    font-size: $intro-text;
+    line-height: $intro-text-line;
+
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
+.about-us-services__performance-box {
+    padding-left: 30px;
+    border-left: 4px solid $separator;
+}
+
+.about-us-services__value-box {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.about-us-services__icon {
+    margin-right: 8px;
+}
+
+.about-us-services__value {
+    @extend %gradient-text;
+    font-size: $title-font;
+    line-height: $title-font-line;
+}
+
+.about-us-services__value-text {
+    font-family: 'Montserrat Regular';
+    font-size: $standard-size;
+    line-height: $standard-size-big-line;
+    color: $main-color;
+
+    &:not(:last-child) {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 1440px) {
+
+    .about-us-services__description {
+        max-width: 662px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .about-us-services__description {
+        max-width: 486px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .about-us-services__box {
+        padding: 0 30px;
+        margin-bottom: 30px;
+        flex-direction: column;
+    }
+
+    .about-us-services__description {
+        max-width: 100%;
+    }
+
+    .about-us-services__text {
+        margin-bottom: 30px;
+    }
+}

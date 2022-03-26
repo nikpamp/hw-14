@@ -1,0 +1,99 @@
+.homepage-publications {
+    background-color: $bg-color;
+    padding: 30px 0;
+}
+
+.homepage-publications__box {
+    padding: 0 60px;
+}
+
+.homepage-publications__title {
+    font-size: $title-font;
+    line-height: $title-font-line;
+    @extend %gradient-text;
+    margin-bottom: 30px;
+}
+
+.homepage-publications__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    padding-bottom: 30px;
+
+    .homepage-publications__card {
+        display: flex;
+        flex-direction: column;
+        justify-items: stretch;
+    }
+
+    .homepage-publications__image-link {
+        display: block;
+
+        .homepage-publications__image {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    .homepage-publications__card-description {
+        border-radius: 0 0 8px 8px;
+        background-color: #fff;
+        padding: 30px;
+        height: 100%;
+    }
+
+    .homepage-publications__card-title {
+        font-size: $standard-size;
+        line-height: $standard-size-small-line;
+        color: $active-regular-color;
+        margin-bottom: 15px;
+    }
+
+    .homepage-publications__card-date {
+        font-size: $small-size;
+        line-height: $small-size-line;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #B3B3BA;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        border-bottom: 4px solid $separator;
+    }
+
+    .homepage-publications__card-text {
+        font-family: 'Montserrat Regular';
+        font-size: $sub-standard-size;
+        line-height: $sub-standard-size-big-line;
+        color: #000;
+    }
+}
+
+@media (max-width: 850px) {
+    
+    .homepage-publications__cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+
+        .homepage-publications--third-card {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    }
+}
+
+@media (max-width: 570px) {
+
+    .homepage-publications__box {
+        padding: 0 30px;
+    }
+    
+    .homepage-publications__cards {
+        grid-template-columns: 1fr;
+        gap: 30px;
+
+        .homepage-publications--third-card {
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+    }
+}

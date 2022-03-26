@@ -1,0 +1,146 @@
+.homepage-clients__title {
+    font-size: $sub-standard-size;
+    line-height: $sub-standard-size-small-line;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $main-color;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.homepage-clients__logo-box {
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 120px);
+
+    .homepage-clients__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &.homepage-clients--hillel {
+            background-color: #1C4280;
+            border-radius: 12px 0 0 0;
+        }
+
+        &.homepage-clients--wannabiz {
+            background-color: #143646;
+        }
+
+        &.homepage-clients--tapgerine {
+            background-color: #F48B30;
+        }
+
+        &.homepage-clients--3d-look {
+            background-color: #9E4DC3;
+            border-radius: 0 12px 0 0;
+        }
+
+        &.homepage-clients--orangear {
+            background-color: #FD9339;
+        }
+
+        &.homepage-clients--adtelligent {
+            background-color: #E2E2E4;
+        }
+
+        &.homepage-clients--clickky {
+            background-color: #C71C36;
+        }
+
+        &.homepage-clients--ecoleasing {
+            background-color: #DCF3F9;
+        }
+
+        &.homepage-clients--infratek {
+            background-color: #EAEAEA;
+            border-radius: 0 0 0 12px;
+        }
+
+        &.homepage-clients--citypark {
+            background-color: #282240;
+        }
+
+        &.homepage-clients--art-print {
+            background-color: #1D4568;
+        }
+
+        &.homepage-clients--ultimate-card {
+            background-color: #000000;
+            border-radius: 0 0 12px 0;
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .homepage-clients__logo-box {
+    
+        .homepage-clients__logo {
+    
+            &.homepage-clients--hillel {
+                border-radius: 0;
+            }
+    
+            &.homepage-clients--3d-look {
+                border-radius: 0;
+            }
+    
+            &.homepage-clients--infratek {
+                border-radius: 0;
+            }
+    
+            &.homepage-clients--ultimate-card {
+                border-radius: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .homepage-clients__logo-box {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 120px);
+    }
+}
+
+@media (max-width: 650px) {
+    .homepage-clients__logo-box {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 120px);
+    }
+}
+
+@media (max-width: 450px) {
+    .homepage-clients__logo-box {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 120px);
+
+        .homepage-clients__logo {
+
+            &.homepage-clients--clickky {
+                display: none;
+            }
+
+            &.homepage-clients--ecoleasing {
+                display: none;
+            }
+
+            &.homepage-clients--infratek {
+                display: none;
+            }
+
+            &.homepage-clients--citypark {
+                display: none;
+            }
+
+            &.homepage-clients--art-print {
+                display: none;
+            }
+
+            &.homepage-clients--ultimate-card {
+                display: none;
+            }
+        }
+    }
+}

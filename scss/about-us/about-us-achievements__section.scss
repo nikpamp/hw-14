@@ -1,0 +1,60 @@
+.about-us-achievements {
+    background-color: $bg-color;
+    padding: 30px 60px 30px 60px;
+}
+
+.about-us-achievements__title {
+    font-size: $sub-standard-size;
+    line-height: $sub-standard-size-small-line;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $main-color;
+    margin-bottom: 30px;
+}
+
+.swiper-slide {
+    padding-bottom: 46px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 110px;
+    column-gap: 40px;
+}
+
+.about-us-achievements__awards-item {
+    background-color: #fff;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper--mobile {
+    display: none;
+}
+
+@media (max-width: 980px) {
+    
+    .swiper-slide {
+        grid-template-rows: 90px;
+    }
+    
+    .swiper-pagination__about-us {
+        top: 120px;
+    }
+}
+
+@media (max-width: 700px) {
+    
+    .swiper-slide {
+        grid-template-columns: 1fr;
+    }
+    
+    .swiper--wide {
+        display: none;
+    }
+
+    .swiper--mobile {
+        display: block;
+    }
+}

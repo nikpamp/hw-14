@@ -1,0 +1,149 @@
+$main-color: #323264;
+$alt-color: #46466E;
+$soft-color: #686887;
+$accent-color: #F0145A;
+$active-regular-color: #24A3FF;
+$active-hover-color: #0085FF;
+$active-active-color: #006CCF;
+$bg-color: #F5F5FA;
+$bg-alt-color: #EDEDF7;
+$text-color: #B3B3BA;
+$separator: #E6E6F0;
+$gradient: linear-gradient(128.63deg, #323264 0%, #323264 73.96%, #A54B5F 100%);
+$soft-gradient: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+$red-gradient: linear-gradient(323.35deg, #F0145A 6.7%, #693264 70.36%);
+$supersoft-gradient: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+$red_text-gradient: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+$title-font: 38px;
+$title-font-line: $title-font + 8;
+$intro-title: 30px;
+$intro-title-line: $intro-title + 7;
+$card-title: 22px;
+$card-title-line: $card-title + 5;
+$intro-text: 19px;
+$intro-text-line: $intro-text + 11;
+$standard-size: 16px;
+$standard-size-big-line: $standard-size + 10;
+$standard-size-small-line: $standard-size + 4;
+$sub-standard-size: 14px;
+$sub-standard-size-big-line: $sub-standard-size + 8;
+$sub-standard-size-small-line: $sub-standard-size + 3;
+$small-size: 12px;
+$small-size-line: $small-size + 3;
+
+* {
+    box-sizing: border-box;
+}
+
+%gradient-text {
+    background: $red_text-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.street {
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat Regular', sans-serif;
+    text-decoration: none;
+    font-size: $standard-size;
+    line-height: $standard-size-small-line;
+    color: #fff;
+
+    &.street--white {
+        color: $text-color;
+    }
+}
+
+.phone-number {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: $standard-size;
+    line-height: $standard-size-small-line;
+    color: #fff;
+
+    &.phone-number--white {
+        color: $text-color;
+    }
+}
+
+.facebook {
+    width: 24px;
+    height: 24px;
+
+    &.facebook--white path.facebook {
+        fill: $text-color;
+    }
+}
+
+::after,
+::before {
+    content: '';
+    background-color: $separator;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin: 0 6px;
+    display: none;
+}
+
+.chapter {
+    display: flex;
+    margin-bottom: 10px;
+
+    .chapter__name {
+        font-size: $sub-standard-size;
+        line-height: $sub-standard-size-small-line;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $active-regular-color;
+        margin-right: 2px;
+    }
+
+    .chapter__pointer {
+        margin-top: 2px;
+    }
+}
+
+%pop-up {
+    width: 590px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+%pop-up-mobile {
+    width: 315px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+%pop-up-placeholder {
+    font-family: 'Montserrat Regular';
+    font-size: $standard-size;
+    line-height: $standard-size-big-line;
+    color: $text-color;
+}
+
+.swiper {
+    position: relative;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+    position: absolute;
+    bottom: 0px;
+}
+
+.swiper-pagination-bullet {
+    background-color: $active-regular-color;
+    width: 16px;
+    height: 16px;
+    
+    &.swiper-pagination-bullet-active {
+        background-color: $active-regular-color;
+    }
+}

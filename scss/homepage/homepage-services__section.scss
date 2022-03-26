@@ -1,0 +1,65 @@
+.homepage-services {
+    padding: 0 60px;
+}
+
+.homepage-services__title {
+    @extend %gradient-text;
+    font-size: $title-font;
+    line-height: $title-font-line;
+    margin-bottom: 60px;
+}
+
+.homepage-services__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+
+    .homepage-services__link {
+        display: block;
+        width: 92px;
+        height: 92px;
+        padding: 14px;
+        background-color: #fff;
+        border-radius: 24px;
+        margin-bottom: 30px;
+
+        &:hover {
+            background-color: $active-regular-color;
+        }
+    }
+
+    .homepage-services__card-title {
+        font-size: $card-title;
+        line-height: $card-title-line;
+        color: $active-regular-color;
+        margin-bottom: 15px;
+    }
+
+    .homepage-services__card-text {
+        font-family: 'Montserrat Regular';
+        font-size: $standard-size;
+        line-height: $standard-size-big-line;
+        color: #FFFFFF;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .homepage-services__cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 580px) {
+
+    .homepage-services__cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .homepage-services {
+        padding: 0 30px;
+    }
+}
